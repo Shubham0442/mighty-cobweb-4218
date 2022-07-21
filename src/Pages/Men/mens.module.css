@@ -1,0 +1,75 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.upperMenDiv{
+    background-color: #f3f3f3;
+}
+.banner1Div{
+   width: 90%;
+   margin: auto;
+   position: relative;
+   margin-bottom: 110px;
+}
+
+.shopNowDiv{
+    width: 350px;
+    background-color: aliceblue;
+    position: absolute;
+    left: 100px;
+    top: 610px;
+    z-index: 1;
+}
+
+.shopNowDiv > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.shopNowDiv > h1{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.shopNowDiv > p{
+    text-align: left;
+    padding-left: 20px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.designerDiv{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+}
+
+.designerListDiv{
+    width: 400px;
+    height: 550px;
+    background-color: white;
+    line-height: 2;
+    position: absolute;
+    left: 560px;
+    top: 840px;
+    z-index: 1;
+}
+
+.designerListDiv > h2{
+    font-size: 15px;
+    font-weight: 600;
+    color: gray;
+}
+
+.designerListDiv > p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
