@@ -22,6 +22,7 @@
     justify-content: left;
     align-items: center;
     gap: 20px;
+    font-weight: bolder;
     color: black;
 }
 
@@ -33,6 +34,7 @@
     align-items: center;
     gap: 20px;
     color: black;
+    font-weight: bolder;
     font-family: sans-serif;
 } 
 
@@ -44,6 +46,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    font-weight: bolder;
     color: black;
 }
 
@@ -107,8 +110,7 @@
 
 .emailIcon{
     width: 18%;
-    margin: auto;
-    
+    margin: auto;  
     font-size: 30px;
 }
 
@@ -243,4 +245,52 @@
    color: #999999;
    font-size: 12px;
  }
+
+.mainUpper{
+    width: 65%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+
+.mainUpper > div{
+    height: 60px;
+    width: 33.33%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+    font-size: 13.5px;
+    align-items: center;
+    font-weight: 600; 
+}
+
+.mainUpper :first-child{
+    justify-content: left;
+}
+.mainUpperLast{
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainUpper> div > img{
+    width: 110px;
+    height: 40px;
+}
+
+.mainLower{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 12px;
+    background-color: #333333;
+    border: 1px solid;
+    box-sizing: border-box;
+}
 
