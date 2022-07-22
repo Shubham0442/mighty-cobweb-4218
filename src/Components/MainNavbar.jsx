@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaRegHeart } from "react-icons/fa";
 import { BiShoppingBag, BiSearch } from "react-icons/bi";
 import style from "./nav.module.css";
+import {BagContext} from '../Contexts/BagContext'
 import {
   Menu,
   MenuButton,
@@ -10,6 +11,7 @@ import {
   Text,
   Box,
   Portal,
+  Flex,
 } from "@chakra-ui/react";
 
 const style1 = {
@@ -25,7 +27,11 @@ const activeStyle = {
 const MainNavbar = () => {
   //const [isLazy, setIsLazy]= useState(false);
 
- const [show, setShow]= useState(false)
+ //const [show, setShow]= useState(false) 
+
+ const {cartLength} = useContext(BagContext)
+
+ console.log(cartLength.length)
 
 
   return (
@@ -48,7 +54,10 @@ const MainNavbar = () => {
             <FaRegHeart size="22px" />
           </Link>
           <Link to="/bag">
+            <Flex alignItems="center">
             <BiShoppingBag size="24px" ml="30px" />
+            <Box borderRadius="50%" border="1px solid" bg="black" color="white" w="22px" h="22px">{cartLength.length}</Box>
+            </Flex>
           </Link>
         </div>
       </div>
@@ -228,6 +237,9 @@ const MainNavbar = () => {
                             <h5>SWIMWARE</h5>
                             <h5>BLAZERS</h5>
                             <h5>JACKETS</h5>
+                            <Link to="/clothing">
+                            <h5>VIEW ALL</h5>
+                            </Link>
                          </Box>
                          <Box fontSize="11px" paddingLeft="15px">
                              <h3 fontSize="15px">DESIGNERS</h3>

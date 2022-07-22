@@ -1,0 +1,42 @@
+
+.bagHeaderDiv{
+    width: 65%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.bagHeaderDiv > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bagHeaderDiv > div > h2{
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+
+.bagHeaderDiv > div > button{
+    font-size: 12px;
+    font-weight: 600;
+    width: 300px;
+    color: white;
+    background-color: #333333;
+    border-radius: 0;
+}
+
+.bagHeaderDiv > h1{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.bagHeaderShowDiv{
+    width: 65%;
+    height: 8px;
+    margin: auto;
+    background-color:#f3f3f3;
+    margin-bottom: 20px;
+}

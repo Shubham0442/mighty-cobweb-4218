@@ -1,0 +1,50 @@
+
+.MainProductDiv{
+    width: 65%;
+    height: 700px;
+    margin: auto;
+    display: flex;
+}
+
+.SliderProductDiv{
+    width: 40%;
+    margin-top: 40px;
+}
+
+.ProductInfoDiv{
+    margin-top: 100px;
+    padding-left: 200px;
+    text-align: left;
+}
+
+.ProductInfoDiv > p{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.ProductInfoDiv > h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.ProductInfoDiv > h4{
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.ProductInfoDiv > div{
+    margin-top: 20px;
+}
+
+.ProductInfoDiv > div > button{
+    width: 400px;
+    font-weight: 700;
+    border-radius: 0;
+}
+
+.ProductDreamBtn > button{
+    color:black;
+}
+
+
