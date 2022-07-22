@@ -294,3 +294,26 @@
     box-sizing: border-box;
 }
 
+.sliderDiv> div > div >div{
+    display: flex;
+    gap: 20px;
+}
+.sliderDiv > div > div >div >div{
+   background: white;
+   line-height: 2;
+}
+
+
+.sliderDivInner > h3{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.sliderDivInner > P{
+    font-size: 10px;
+    color: gray;
+}
+.sliderDivInner > h4{
+    font-size: 14px;
+    font-weight: 550;
+}
