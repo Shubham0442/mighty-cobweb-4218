@@ -7,16 +7,26 @@ import {
   Menu,
   MenuButton,
   MenuList,
-  MenuItem,
   Text,
   Box,
   Portal,
 } from "@chakra-ui/react";
 
+const style1 = {
+    color:"white",
+    background:"black"
+}
+
+const activeStyle = {
+    color:"black",
+    background:"white"
+}
+
 const MainNavbar = () => {
   //const [isLazy, setIsLazy]= useState(false);
 
-  const handleTab = () => {};
+ const [show, setShow]= useState(false)
+
 
   return (
     <div>
@@ -47,7 +57,7 @@ const MainNavbar = () => {
           <Menu>
             <MenuButton color="white">NEW ARRIVAL</MenuButton>
             <Portal>
-              <MenuList w="100%" m="auto">
+              <MenuList>
                 <Box
                   p="40px"
                   bg="white"
@@ -56,6 +66,8 @@ const MainNavbar = () => {
                   display="flex"
                   m="auto"
                   gap="10px"
+                  paddingLeft="250px"
+                  paddingRight="300px"
                 >
                   <Box
                     bg="#f3f3f3"
@@ -117,19 +129,21 @@ const MainNavbar = () => {
             </Portal>
           </Menu>
         </div>
-        <div>
-          <Menu>
+        <div> 
+          <Menu >
             <MenuButton color="white">DESIGNER</MenuButton>
-            <Portal w="100%">
-              <MenuList w="100%" >
+            <Portal>
+              <MenuList >
                 <Box
                   p="40px"
                   bg="white"
                   shadow="md"
-                  w="100%"
                   display="flex"
                   m="auto"
+                  w="100%"
                   gap="10px"
+                  paddingLeft="420px"
+                  paddingRight="300px"
                 >
                   <Box
                     bg="#f3f3f3"
@@ -194,13 +208,16 @@ const MainNavbar = () => {
               </MenuList>
             </Portal>
           </Menu>
+          
         </div>
         <div>
             <Menu>
               <MenuButton color="white">CLOTHING</MenuButton>
               <Portal>
-                 <MenuList>
-                    <Box display="flex" gap="15px" lineHeight="2">
+                 <MenuList >
+                    <Box display="flex" gap="15px" lineHeight="2" 
+                    paddingLeft="370px"
+                    paddingRight="300px">
                          <Box bg="#f3f3f3" fontSize="15px" paddingLeft="15px">
                             <h3>CATEGORIES</h3>
                             <h5> T-SHIRTS AND TOPS</h5>
@@ -245,8 +262,10 @@ const MainNavbar = () => {
             <Menu>
               <MenuButton color="white">SHOES</MenuButton>
               <Portal>
-                 <MenuList>
-                    <Box display="flex" gap="15px" lineHeight="2">
+                 <MenuList >
+                    <Box display="flex" gap="15px" lineHeight="2" 
+                    paddingLeft="370px"
+                    paddingRight="300px">
                          <Box bg="#f3f3f3" fontSize="15px" paddingLeft="15px">
                             <h3>CATEGORIES</h3>
                             <h5>LOAFERS</h5>
@@ -292,8 +311,10 @@ const MainNavbar = () => {
         <Menu>
               <MenuButton color="white">ACCESSORIES</MenuButton>
               <Portal>
-                 <MenuList>
-                    <Box display="flex" gap="15px" lineHeight="2">
+                 <MenuList >
+                    <Box display="flex" gap="15px" lineHeight="2" 
+                    paddingLeft="350px"
+                    paddingRight="300px">
                          <Box bg="#f3f3f3" fontSize="15px" paddingLeft="15px">
                             <h3>CATEGORIES</h3>
                             <h5>BAGPACKS AND FANNY PACKS</h5>
