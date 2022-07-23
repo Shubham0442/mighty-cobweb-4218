@@ -79,6 +79,8 @@ const Product = () => {
          })
     }
 
+    
+
   return (
     <div>
         <MainNavbar/>
