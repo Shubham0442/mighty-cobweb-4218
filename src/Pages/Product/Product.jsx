@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import MainNavbar from '../../Components/MainNavbar'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -7,6 +7,7 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import style from "./product.module.css"
 import { Button } from '@chakra-ui/react';
+import { BagContext } from '../../Contexts/BagContext';
 
 const ProductDisplay = ({productData}) =>{
 
@@ -50,6 +51,9 @@ const ProductDisplay = ({productData}) =>{
 const Product = () => {
 
     const [productData, setProductData] = useState({});
+    const [load, setLoad] = useState(false)
+
+    const {cartLength, handleCartLength} = useContext(BagContext)
     
     
     const {id} = useParams()
@@ -64,6 +68,7 @@ const Product = () => {
             })
             .catch((error)=>{
                 console.log(error)
+               
             })
         }
     },[])
@@ -72,14 +77,20 @@ const Product = () => {
          axios.post(`https://yoox-server.herokuapp.com/bag`, {
             image1: productData.image1,
             name: productData.name,
+            category:productData.category,
             price:productData.price
          })
          .then(()=>{
             console.log()
+            handleCartLength()
+            
          })
-    }
 
-    
+         setLoad(true)
+         setTimeout(()=>{
+         setLoad(false)
+         },3000)
+    }
 
   return (
     <div>
@@ -94,7 +105,13 @@ const Product = () => {
                     <p>US$ {productData.price}</p>
 
                     <div>
-                        <Button onClick = {()=>handleAddtoBag(productData)} bg="#333333" color="white">ADD TO SHOPPING BAG</Button>
+                        <Button 
+                        onClick = {()=>handleAddtoBag(productData)}
+                        bg="#333333" color="white"
+                        isLoading={load}  
+                        >
+                          ADD TO SHOPPING BAG
+                          </Button>
                     </div>
                     <div className={style.ProductDreamBtn}>
                         <Button bg="#f3f3f3" >ADD TO DREAM BOX</Button>

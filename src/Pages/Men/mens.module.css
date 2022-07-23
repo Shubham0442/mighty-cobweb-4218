@@ -234,21 +234,21 @@
     gap: 20px;
 }
 
-.MainProductsDiv > div > h4{
+.clothingDivBox > h4{
     font-size: 13.5px;
     font-weight: 650;
 }
 
-.MainProductsDiv > div > h5{
+.clothingDivBox> h5{
     font-size: 13.5px;
     color: gray;
 }
-.MainProductsDiv > div > h6{
+.clothingDivBox > h6{
     font-size: 13.3px;
     font-weight: 650;
 }
 
-.MainProductsDiv > div > img{
+.clothingDivBox> img{
     width: 200px;
     display: block;
     margin: auto;
