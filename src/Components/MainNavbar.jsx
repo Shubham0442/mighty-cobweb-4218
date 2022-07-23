@@ -14,6 +14,7 @@ import {
   Flex,
 } from "@chakra-ui/react";
 
+
 const style1 = {
     color:"white",
     background:"black"
@@ -31,7 +32,7 @@ const MainNavbar = () => {
 
  const {cartLength} = useContext(BagContext)
 
- console.log(cartLength.length)
+ //console.log(cartLength.length)
 
 
   return (
@@ -56,7 +57,10 @@ const MainNavbar = () => {
           <Link to="/bag">
             <Flex alignItems="center">
             <BiShoppingBag size="24px" ml="30px" />
-            <Box borderRadius="50%" border="1px solid" bg="black" color="white" w="22px" h="22px">{cartLength.length}</Box>
+            {
+              cartLength.length === 0 ? <Box></Box> : <Box borderRadius="50%" border="1px solid" bg="black" color="white" w="22px" h="22px">{cartLength.length}</Box>
+            }
+            
             </Flex>
           </Link>
         </div>

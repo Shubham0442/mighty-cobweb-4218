@@ -6,15 +6,18 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { ChakraProvider } from '@chakra-ui/react';
 import {BagContextProvider} from './Contexts/BagContext';
+import AuthContextProvider from './Contexts/AuthContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
      <BagContextProvider>
+      <AuthContextProvider>
        <ChakraProvider>
           <App />
        </ChakraProvider>
+       </AuthContextProvider>
      </BagContextProvider>
     </BrowserRouter>
   </React.StrictMode>

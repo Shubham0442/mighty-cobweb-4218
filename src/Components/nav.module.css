@@ -45,9 +45,17 @@
 .forIcon{
     display: flex;
     align-items: center;
+    align-content: center;
     gap: 5px;
     font-weight: bolder;
     color: black;
+}
+
+.forIcon > button{
+    background-color: white;
+    color: black;
+    font-size: 10px;
+    font-weight: bolder;
 }
 
 .Upper1{
@@ -316,4 +324,49 @@
 .sliderDivInner > h4{
     font-size: 14px;
     font-weight: 550;
+}
+
+.buttonsSocialDiv > p{
+    font-weight: 500;
+    font-size: 12.5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.googlebtnDivNav{
+    width: 300px;
+    margin: auto;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.googlebtnDivNav > div >button {
+    border-radius: 0;
+}
+
+.LoginFormDiv{
+    width: 300px;
+    margin: auto;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.LoginFormDiv > form > div > input{
+    border-radius: 0;
+    background-color: #f3f3f3;
+    font-size: 12px;
+    font-weight: 550;
+}
+
+.LoginFormDiv > form > div{
+    margin-bottom: 15px;
+}
+
+.LoginFormDiv > form > div > button{
+    color: white;
+    border-radius: 0;
+    background-color: #333333;
+    font-size: 12px;
 }

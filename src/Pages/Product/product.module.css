@@ -1,7 +1,11 @@
 
+*{
+    padding: 0px;
+    margin: 0px;
+}
 .MainProductDiv{
     width: 65%;
-    height: 700px;
+    height: 600px;
     margin: auto;
     display: flex;
 }
@@ -46,5 +50,3 @@
 .ProductDreamBtn > button{
     color:black;
 }
-
-

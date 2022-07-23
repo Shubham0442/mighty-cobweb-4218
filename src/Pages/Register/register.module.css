@@ -1,0 +1,120 @@
+
+.upperHeaderRegi{
+    width: 100%;
+    margin: auto;
+    border: 1px solid #f3f3f3;
+    background-color:  #f3f3f3;
+}
+
+.upperHeaderRegi>h2{
+    margin-top: 40px;
+    font-size: 17px;
+    font-weight: 650;
+    color: #333333;
+} 
+
+.upperHeaderRegi>h3{
+    font-size: 14px;
+    color: #333333;
+}
+
+
+.upperHeaderRegi>p{
+    font-size: 12px;
+    color: #333333;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.SOCIALRegi{
+    width: 40%;
+    margin: auto;
+    margin-top: 40px;
+    
+}
+
+.SOCIALRegi > div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.SOCIALRegi > div > button{
+    border-radius: 0;
+    font-size: 20px;
+    height: 45px;
+}
+
+.SOCIALRegi > div > h2{
+    font-size: 15px;
+}
+
+.googlebtnDiv > button{
+    border-radius: 0;
+    font-size: 20px;
+    height: 45px;
+    background-color: white;
+    border: 2px solid #dadada;
+}
+
+.RegiformDiv{
+    width: 40%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.RegiformDiv > form > div{
+    margin-bottom: 20px;
+}
+
+.RegiformDiv > form > div > input{
+    border-radius: 0;
+    font-weight: 600;
+    background-color: #f3f3f3;
+}
+
+.RadioDiv{
+    width: 50%;
+    margin: auto;
+    font-weight: 550;
+}
+
+.mobileDiv{
+    width: 400px;
+    margin: auto;
+    border-radius: 0;
+    font-weight: 700;
+    background-color: #f3f3f3;
+}
+
+.mobileDiv > input{
+    border-radius: 0;
+    font-weight: 600;
+    background-color: #f3f3f3;
+}
+
+.checkboxDiv {
+    width: 400px;
+    margin: auto;
+    text-align: left;
+    border-radius: 0;
+    font-size: 8px;
+    padding: 10px;
+    background-color: #f3f3f3;
+    color: #333333;
+}
+
+.checkboxDiv > input{
+    font-size: 8px;
+}
+
+
+.RegisterBtnDiv > button{
+    background-color: #333333;
+    color:white;
+    width: 400px;
+    font-size: 14px;
+    border-radius: 0;
+} 
+
+

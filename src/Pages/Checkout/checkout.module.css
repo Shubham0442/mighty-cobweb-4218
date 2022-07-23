@@ -1,0 +1,153 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.mainContainerCheckout{
+    width: 100%;
+    margin: auto;
+    background-color: #f3f3f3;
+}
+
+.NintyPerceDiv{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    background-color: white;
+    padding-top: 40px;
+    gap: 20px;
+} 
+
+.SeventyPerDiv{
+    width: 65%;
+    margin: left;
+}
+
+.SeventyPerDiv > h1{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.SeventyPerDiv > p{
+    font-size: 14px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.FormDiv > form{
+    padding: 20px;
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr) ;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+.threetyPerDiv{
+    width: 30%;
+    margin: auto;
+}
+
+.threetyPerDiv > div > div{
+  text-align: left;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.threetyPerDiv > div > div> h2{
+    font-size: 15px;
+    font-weight: 650;
+}
+
+.threetyPerDiv > div > div> p{
+    font-size: 14px;
+    font-weight: 550;
+    color: gray;
+}
+
+.threetyPerDiv > hr{
+    border: 1px solid #cfcfcf;
+    background-color: #ccc9c9;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.threetyPerDiv > div{
+    margin-top: 20px;
+}
+.CartLengthShowDivLast{
+    display: flex; 
+    justify-content: space-between;
+    color: black;
+    padding-right: 20px;
+    font-size: 15px;
+    font-weight: 650;
+}
+
+.CartLengthShowDivFirst{
+    display: flex; 
+    justify-content: space-between;
+    color: black;
+    padding-right: 20px;
+    font-size: 15px;
+    font-weight: 650;
+}
+
+.FormDiv > form > div > input{
+    border-radius: 0;
+    background-color: #f3f3f3;
+    font-weight: 550;
+}
+
+.FormDiv > form > div > button{
+    color: white;
+    border-radius: 0;
+    font-size: 14px;
+    width: 400px;
+}
+
+.productInfoCheck{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.productInfoCheck > img{
+    width: 100px;
+}
+
+
+.productInfoCheck > div > h3{
+    font-size: 13.5px;
+    font-weight: 650;
+}
+
+.productInfoCheck > div > p{
+    font-size: 13.5px;
+    font-weight: 650;
+    color: gray;
+}
+
+.productDisplayDiv > h5{
+    font-size: 12.5px;
+    font-weight: 550;
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 20px;
+} 
+
+.cardDiv{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.cardDiv > img{
+    width: 250px;
+    height: 30px;
+}
+
+.cardDiv > h3{
+    font-size: 12px;
+    font-weight: 650;
+}

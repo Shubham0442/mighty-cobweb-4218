@@ -40,3 +40,82 @@
     background-color:#f3f3f3;
     margin-bottom: 20px;
 }
+
+.BagMainDiv{
+    width: 65%;
+    margin: auto;
+    text-align: left;
+}
+
+.BagMainDiv > h1{
+    font-size: 17.5px;
+    font-weight: 650;
+    margin-bottom: 20px;
+}
+
+.BagMainInnerDiv{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-right: 30px;
+    gap: 100px;
+    margin-bottom: 10px;  
+}
+
+.BagMainInnerDiv > div > img{
+    width: 80px;
+}
+
+.BagMainInnerDiv > div > div > h2{
+    font-size: 15px;
+    font-weight: 650;
+}
+
+.BagMainInnerDiv > div > div > h3{
+    font-size: 12px;
+    font-weight: 550;
+    color: gray;
+}
+
+.BagMainInnerDiv > div + div{
+    font-size: 15px;
+    font-weight: 650;
+}
+
+.OrderSummeryDiv{
+    width: 65%;
+    margin: auto;
+}
+
+.OrderSummeryDiv > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    font-weight: 650;
+    margin-bottom: 30px;
+    color: #333333;
+}
+
+.OrderSummeryDiv > hr{
+    margin-bottom: 30px;
+    background-color: #f3f3f3;
+    border: 1.5px solid #f3f3f3;
+}
+
+.OrderSummeryDiv > hr + div{
+    font-size: 18.5px;
+    font-weight: 650;
+}
+
+.OrderSummeryDiv + hr{
+    width: 65%;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color:#333333;
+    border: 1px solid #333333;
+}

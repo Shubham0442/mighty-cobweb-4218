@@ -63,20 +63,6 @@ const Clothing = () => {
         })
     }
 
-    // const getTShirt = (cloth)=>{
-        
-    //    let updated =  cloth.filter((item)=>item.category === "t-shirt")
-    //    setCloth(updated)
-    // }
-
-    
-
-    // const getTSweatShirt = (cloth)=>{
-        
-    //     let updated =  cloth.filter((item)=>item.category === "sweatshirts")
-    //     setCloth(updated)
-    //  }
-
     const handlefilterData=(x)=>{
         setLoading(true)
 
@@ -471,7 +457,7 @@ const Clothing = () => {
                 {
                     cloth.map((elem)=>(
                         <Link to={`/clothing/${elem.id}`}>
-                        <div key = {elem.id}>
+                        <div key = {elem.id} className={style.clothingDivBox}>
                             <img src={elem.image1} alt="c" />
                             <hr />
                             <h4>{elem.name}</h4>
