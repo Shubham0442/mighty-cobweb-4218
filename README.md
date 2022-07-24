@@ -1,6 +1,6 @@
-# Yoox.com Project Construct Week
+# Yoox-clone Project Construct Week
 Welcome!
- This Readme contains details about our project. I have built a cloned website of Yoox.con with some of its basic functionalities. This overall project was a part of our construct week at Masai School.
+ This Readme contains details about my project. I have built a cloned website of Yoox.com with some of its basic functionalities. This overall project was a part of our construct week at Masai School.
 
 ## About Project
 
@@ -45,8 +45,6 @@ I cloned the site with it's some of the basic functionalities during the constru
 - React
 - React-router-dom
 - Axios
-- Redux
-- Redux-thunk
 - chakra-Ui 
 
 ### Server
