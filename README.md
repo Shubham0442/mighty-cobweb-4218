@@ -54,10 +54,10 @@ I cloned the site with it's some of the basic functionalities during the constru
 
 
 ## Deployment Link : 
-
+(https://yoox-clone-project.vercel.app/)
 
 ## Video-presentation Link : 
-
+(https://drive.google.com/file/d/1sjIv_nuSgGVd7mL84O-R-uHAn1YY-Bp2/view?usp=sharing)
 
 
 ## Author : 
