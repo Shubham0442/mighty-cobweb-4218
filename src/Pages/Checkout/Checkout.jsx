@@ -14,15 +14,15 @@ const Checkout = () => {
     const navigates = useNavigate()
     const [showload, showSetLoad] = useState(false)
 
-    const [ show , setShow ] = useState(false)
+    //const [ show , setShow ] = useState(false)
     const toast1 = useToast()
     const toast2 = useToast()
 
 
-    const changeToPayment = (e) =>{
-        e.preventDefault()
-        setShow(!show)
-    }
+    // const changeToPayment = (e) =>{
+    //     e.preventDefault()
+    //     setShow(!show)
+    // }
 
     const handleCheckoutData =(e)=>{
         e.preventDefault()
@@ -61,9 +61,7 @@ const Checkout = () => {
     <div >
         <MainNavbar/>
         <div className={style.mainContainerCheckout}>
-            <div className={style.NintyPerceDiv}>
-            {
-                !show ? 
+            <div className={style.NintyPerceDiv}> 
             
                 <div className={style.SeventyPerDiv}>
                     <h1>Shipping</h1>
@@ -101,15 +99,12 @@ const Checkout = () => {
                         </div>
                         <div></div>
                         <div></div>
-                        <div>
-                            <Button type="submit" bg={"#333333"} onClick = {changeToPayment}>SHIP TO THIS ADDRESS</Button>
-                        </div>
                     </form>
-                    </div>
-                </div>
-                   :
+                  </div>
+                
+                   
 
-                   <div className={style.SeventyPerDiv}>
+                   
                     <h1>Payment</h1>
                     <p>Select Payment Method</p>
                     <div  className={style.FormDiv}>
@@ -129,10 +124,10 @@ const Checkout = () => {
                             <Input type = "month" placeholder='Month'/>
                         </div>
                         <div>
-                            <Input type = "text" placeholder='FIRST NAME'/>
+                            <Input type = "number" placeholder='CVV'/>
                         </div>
                         <div>
-                            <Input type = "text" placeholder='LAST NAME'/>
+                            <Input type = "text" placeholder='CARD HOLDER NAME'/>
                         </div>
                         <div>
                             <Input type = "text" placeholder='ADDRESS'/>
@@ -144,7 +139,7 @@ const Checkout = () => {
                             <Input type = "number" placeholder='ZIPCODE'/>
                         </div>
                         <div>
-                            <Input type = "text" placeholder='STATE'/>
+                           
                         </div>
                         <div>
                             <Input type = "text" placeholder='INDIA'/>
@@ -157,7 +152,7 @@ const Checkout = () => {
                     </form>
                     </div>
                 </div>
-                }
+                
                 <div className={style.threetyPerDiv}>
                     <div>
                             <div className={style.CartLengthShowDivFirst} >

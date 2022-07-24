@@ -88,7 +88,7 @@ const Bag = () => {
          <div className={style.OrderSummeryDiv}>
             <div>
                  <h2>TOTAL FOR ITEMS</h2>
-                 <h2>{total}</h2>
+                 <h2>US$ {total}</h2>
             </div>
             <div>
                 <h2>Local Taxes and Duties</h2>
@@ -105,7 +105,7 @@ const Bag = () => {
              <hr/>
             <div>
                  <h1>ORDER TOTAL</h1>
-                 <h1>{total}</h1>
+                 <h1>US$ {total}</h1>
             </div>
          </div>
          <hr />
