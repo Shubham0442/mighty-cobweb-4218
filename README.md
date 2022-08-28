@@ -15,7 +15,6 @@ I cloned the site with it's some of the basic functionalities during the constru
 ![Man page](https://i.imgur.com/9lCeUcM.png)
 ![Clothing Page](https://i.imgur.com/sY6PxVL.png)
 
-![]
 - Registration and Login 
 ![Registration](https://i.imgur.com/dNJQgAG.png)
 ![Login](https://i.imgur.com/gA2PFlc.png)
