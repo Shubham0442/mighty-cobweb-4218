@@ -62,7 +62,7 @@ const Product = () => {
        
         if(id)
         {
-            axios.get(`https://yoox-server.onrender.com/${id}`)
+            axios.get(`https://yoox-server.onrender.com/clothData${id}`)
             .then((res)=>{
                 setProductData(res.data)
             })
