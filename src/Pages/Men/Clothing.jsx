@@ -29,7 +29,7 @@ const Clothing = () => {
 
     const showData = () =>{
         setLoading(true)
-        axios.get('https://yoox-server.herokuapp.com/clothData')
+        axios.get('https://yoox-server.onrender.com/clothData')
         .then((res)=>{
             setCloth(res.data)
             setLoading(false)
