@@ -44,7 +44,7 @@ const Login = () => {
     const handleLogin = (e) =>{
         e.preventDefault()
 
-        axios.get(`https://yoox-server.herokuapp.com/user`)
+        axios.get(`https://yoox-server.onrender.com/user`)
         .then((res)=>{
             
             let flag = false

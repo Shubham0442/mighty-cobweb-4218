@@ -12,7 +12,7 @@ export const BagContextProvider = ({children}) => {
 
 
     const handleCartLength = ()=>{
-      axios.get(`https://yoox-server.herokuapp.com/bag`)
+      axios.get(`https://yoox-server.onrender.com/bag`)
       .then((res)=>{
           setCartLength(res.data)
           //console.log(res.data, "context")    

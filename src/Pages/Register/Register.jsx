@@ -37,7 +37,7 @@ const Register = () => {
      
     e.preventDefault();
 
-     axios.post(`https://yoox-server.herokuapp.com/user`, {
+     axios.post(`https://yoox-server.onrender.com/user`, {
 
      firstname:registerUser.firstname,
      lastname:registerUser.lastname,

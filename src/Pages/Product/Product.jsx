@@ -62,7 +62,7 @@ const Product = () => {
        
         if(id)
         {
-            axios.get(`https://yoox-server.herokuapp.com/clothData/${id}`)
+            axios.get(`https://yoox-server.onrender.com/${id}`)
             .then((res)=>{
                 setProductData(res.data)
             })
@@ -74,7 +74,7 @@ const Product = () => {
     },[])
 
     const handleAddtoBag = (productData) =>{
-         axios.post(`https://yoox-server.herokuapp.com/bag`, {
+         axios.post(`https://yoox-server.onrender.com/bag`, {
             image1: productData.image1,
             name: productData.name,
             category:productData.category,

@@ -22,7 +22,7 @@ const Bag = () => {
 
   const handleRemove = (id) =>{
     
-    axios.delete(`https://yoox-server.herokuapp.com/bag/${id}`)
+    axios.delete(`https://yoox-server.onrender.com/${id}`)
     .then(()=>{
       handleCartLength()
     })
