@@ -51,7 +51,7 @@ const Clothing = () => {
 
         setLoading(true)
 
-        axios.get(`https://yoox-server.herokuapp.com/clothData?_sort=price&_order=${x}`)
+        axios.get(`https://yoox-server.onrender.com/clothData?_sort=price&_order=${x}`)
         .then((res)=>{
             setCloth(res.data)
             setLoading(false)
@@ -66,7 +66,7 @@ const Clothing = () => {
     const handlefilterData=(x)=>{
         setLoading(true)
 
-        axios.get(`https://yoox-server.herokuapp.com/clothData?category=${x}`)
+        axios.get(`https://yoox-server.onrender.com/clothData?category=${x}`)
         .then((res)=>{
             setCloth(res.data)
             setLoading(false)
