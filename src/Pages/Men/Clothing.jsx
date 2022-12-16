@@ -19,6 +19,7 @@ import {
   } from '@chakra-ui/react'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import LodingIndicator from '../../Components/LodingIndicator';
 
 const Clothing = () => {
 
@@ -447,13 +448,7 @@ const Clothing = () => {
                         <img src="https://www.yoox.com/images/yoox80/banners/6830_1_teleyoox_DM_ROWHK.png?634485886601286852" alt="ad1" />
             </div>
             <div className={style.MainProductsDiv}>
-                { loading && <Spinner
-                        thickness='4px'
-                        speed='0.65s'
-                        emptyColor='gray.200'
-                        color='blue.500'
-                        size='xl'
-                />}
+                { loading && <LodingIndicator loading = {loading}/>}
                 {
                     cloth.map((elem)=>(
                         <Link to={`/clothing/${elem.id}`}>
