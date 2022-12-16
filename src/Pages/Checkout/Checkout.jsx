@@ -6,11 +6,12 @@ import { BagContext } from '../../Contexts/BagContext'
 import { useToast } from '@chakra-ui/react'
 
 import style from './checkout.module.css'
+import axios from 'axios'
 
 
 const Checkout = () => {
 
-    const {cartLength, handleCartLength, total} = useContext(BagContext)
+    const {cartLength, setCartLength, handleCartLength, total} = useContext(BagContext)
     const navigates = useNavigate()
     const [showload, showSetLoad] = useState(false)
 
@@ -31,25 +32,46 @@ const Checkout = () => {
         setTimeout(()=>{
         showSetLoad(false)
 
-          toast2({
-            title: ' YOUR ORDER HAS BEEN PLACED!',
-            description: "",
-            status: 'success',
-            duration: 7000,
-            isClosable: true,
-            position: "top"
-          })
+        axios.get(`https://yoox-server.onrender.com/bag`)
+        .then((res)=>{
+             
+            const cart = res.data;
+            
+            for( let i = 0; i < cart.length; i++ )
+            {
+                axios.delete(`https://yoox-server.onrender.com/bag/${cart[i].id}`)
+                .then((res)=>{
+                   handleCartLength();
+                   setCartLength(cart)
+                })
+                .catch((error)=>{
+                    console.log(error)
+                })
+            }
+             
+        })
 
-          toast1({
-            title: 'PAYMENT SUCCESSFUL!',
-            description: "",
-            status: 'success',
-            duration: 7000,
-            isClosable: true,
-            position: "top"
-          })
 
-          navigates("/")
+        
+            toast2({
+                title: ' YOUR ORDER HAS BEEN PLACED!',
+                description: "",
+                status: 'success',
+                duration: 7000,
+                isClosable: true,
+                position: "top"
+              })
+    
+              toast1({
+                title: 'PAYMENT SUCCESSFUL!',
+                description: "",
+                status: 'success',
+                duration: 7000,
+                isClosable: true,
+                position: "top"
+              })
+    
+              navigates("/")
 
         },5000)
        

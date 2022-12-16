@@ -36,7 +36,7 @@ export const BagContextProvider = ({children}) => {
   //console.log(cartLength.length)
   return (
     <div>
-        <BagContext.Provider value = {{cartLength, handleCartLength, total }}>
+        <BagContext.Provider value = {{cartLength, setCartLength, handleCartLength, total }}>
             {children}
         </BagContext.Provider>
     </div>

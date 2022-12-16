@@ -58,7 +58,7 @@ const Clothing = () => {
             setLoading(false)
         })
         .catch((error)=>{
-            console.log(error)
+            //console.log(error)
             setError(true)
             setLoading(false)
         })
@@ -73,7 +73,7 @@ const Clothing = () => {
             setLoading(false)
         })
         .catch((error)=>{
-            console.log(error)
+            //console.log(error)
             setError(true)
             setLoading(false)
         })
@@ -89,7 +89,7 @@ const Clothing = () => {
     
 
 
-    console.log(cloth)
+    //console.log(cloth)
 
   return (
     <div>
